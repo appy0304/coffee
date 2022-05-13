@@ -1,0 +1,110 @@
+
+    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffeee" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topping"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="16sp"
+            android:textAllCaps="true"
+            />
+        <CheckBox
+            android:id="@+id/whipped_cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whipped Cream"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingLeft="24dp"
+
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:textAllCaps="true"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            android:textColor="@color/cardview_dark_background"
+            android:onClick="decreament"
+            />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="true" />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16sp"
+            android:onClick="increament" />
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:layout_marginTop="16sp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:layout_marginTop="16sp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="order"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp"
+        android:onClick="submitOrder"
+        android:layout_marginTop="16sp"/>
+    </LinearLayout>
+</RelativeLayout>
